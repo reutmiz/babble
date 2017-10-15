@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vegans - Babble</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+<body>
+<header class="topMenu">
+        <img src="images/logo_babble.png" alt="Babble icon" >
+        <h1 class = "is-hidden" aria-hidden="true">Babble</h1>
+</header>
+<nav class="leftMenu"></nav>
+<main id='area' class='mainArea'>
+    <div class="stat">
+        <h3>Vegans</h3>
+        <dl>
+            <dt class="is-hidden" aria-hidden="true">Messages</dt>
+                <dd>
+                    <img src="images/messages_num.png" alt="">
+                    <div class="statNum" id="msgNum">0</div>
+                </dd>
+            <dt class="is-hidden" aria-hidden="true">Users</dt>
+                <dd>
+                        <img src="images/users_num.png" alt="">
+                        <div id="usersNum">0</div>
+                </dd>
+        </dl>
+    </div>
+    <ol id='messagesPart' class='MessagesChat'></ol>
+    <form class="formInput" id="sendMsg">
+        <div id="growable" class="growable">
+             <pre><span class="js-growSpan"></span><br></pre>
+             <label for="textArea" class="is-hidden" aria-hidden="true">input msg</label>
+             <textarea id='textArea' onkeypress="return checkIfEnterPressed(event)"></textarea>
+        </div>
+        <div class="buttonWrapper">
+             <button class="submitButton" aria-label="Submit"></button>
+         </div>
+     </form>
+</main>
+<div id="modal-overlay" class="Modal-overlay"></div>
+<div id="modal" class="Modal">
+        <div class="modal-ques">Who are you?</div>
+        <div class="modal-label">
+            <label for="name">Full name</label>
+            <input id="name" type="text" />
+        </div>
+        <div class="modal-label">
+		    <label for="email">Email</label>
+            <input class="is-marginLeft" id="email" type="email" />
+        </div>
+        <div class="modal-buttons">
+                <button class="saveBtn" onclick=clickOnSaveeBtn()>Save</button>
+            <button class="AnonyBtn" onclick=clickOnAnonymousBtn()>Stay Anonymous</button>
+        </div>
+</div>
+<script src="/scripts/main.js"></script>
+</body>
+</html>
