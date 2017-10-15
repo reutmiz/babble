@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+
 /*defult & mobile design*/
 @media only screen and (min-width:0px) {
     body {
@@ -38,7 +38,7 @@
         padding-left: 2%;
         display: inline;
     }
-    .stat h3{
+    .stat h2{
         font-size: 20px;
         font-family: 'Nunito';
         font-weight: normal;
@@ -135,9 +135,9 @@
     .message-box time{
         font-weight: normal;
         font-size: 10px;
-        font-family: 'Comfortaa', 'sans-serif';
-        color: #EBEDEC;
+        color: #999999;
         padding-left: 8px;
+        font-family:'Nunito', sans-serif; 
     }
     /*design for textarea and send button section*/
     .messageInput{
@@ -318,7 +318,7 @@
     font-size: 1.2em;
     padding: 0px;
     bottom: 0px;
-    color: rgb(118,118,118);
+    color: #666;
     font-weight:normal;
     font-size: 1.2em;
 }
