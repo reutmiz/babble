@@ -1,0 +1,41 @@
+<html>
+        <head>
+            <link rel="stylesheet" href="styles/main.css">
+        </head>
+    <body class="body">
+        <div>
+        <form class="body">
+        <label>Ouput</label>
+        <textarea id='output' rows="4" cols="50"></textarea>
+        </form>
+    
+    <form action="http://localhost:9097" method="POST">    
+        <label>Input</label>
+        <textarea rows="4" cols="50" name="msg"></textarea>
+        <button>Click Me!</button>
+    </form>
+    </div>
+    <div class="menu-top">
+        <div class="back"><i class="fa fa-chevron-left"></i> </div>
+    </div>
+    <nav class="menu-left">
+    </nav>
+    <div id="modal-overlay" class="Modal-overlay"></div>
+    <div id="modal" class="Modal" id="register">
+            <div class="modal-q">Who are you?</div>
+            <div class="modal-name">
+                <label for="name">full name</label>
+                <input id="name" type="name" />
+            </div>
+            <div class="modal-email">
+                <label for="email">email</label>
+                <input id="email" type="email" />
+            </div>
+            <div class="modal-buttons">
+                <button onclick=clickOnSaveeBtn()>Save</button>
+                <button onclick=clickOnAnonymousBtn()>Stay Anonymous</button>
+            </div>
+    </div>
+    <script src="scripts/main.js"></script>
+    </body>
+    </html>
